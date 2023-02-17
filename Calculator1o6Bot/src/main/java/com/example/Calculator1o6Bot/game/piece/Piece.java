@@ -18,9 +18,13 @@ public abstract class Piece {
 
     public abstract boolean step(Point newPoint);
 
+    public void changePoint (Point newPoint){
+        getPoint().setXY(newPoint.getX(), newPoint.getY());
+    }
+
     public void eat(Point newPoint){
         getMatrix()[newPoint.getX()][newPoint.getY()].getPoint().setXY(-1,-1);
-        getPoint().setXY(newPoint.getX(), newPoint.getY());
+        changePoint(newPoint);
     }
 
 }

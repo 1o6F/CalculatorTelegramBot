@@ -1,4 +1,5 @@
 package com.example.Calculator1o6Bot.game.piece;
+import static java.lang.Math.abs;
 
 import com.example.Calculator1o6Bot.game.common.Point;
 
@@ -30,7 +31,7 @@ public class King extends Piece {
                     return false;
                 }
             } else {
-                getPoint().setXY(newX, newY);
+                changePoint(newPoint);
                 return true;
             }
 

@@ -14,7 +14,6 @@
     <name>Calculator1o6Bot</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>11</java.version>
         <telegram.version>6.0.1</telegram.version>
         <kotlin.version>1.6.0</kotlin.version>
     </properties>

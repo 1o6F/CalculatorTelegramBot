@@ -1,6 +1,7 @@
 package com.example.Calculator1o6Bot.game.piece;
 
 import com.example.Calculator1o6Bot.game.common.Point;
+import com.example.Calculator1o6Bot.piece.KnightStepKt;
 
 public class Knight extends Piece{
 
@@ -10,7 +11,6 @@ public class Knight extends Piece{
 
     @Override
     public boolean step(Point newPoint) {
-
-        return false;
+        return KnightStepKt.stepOfKnight(this, newPoint);
     }
 }

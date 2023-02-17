@@ -1,1 +1,0 @@
-fun stepOfKnight(val knight: Knight)
